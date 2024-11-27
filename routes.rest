@@ -1,8 +1,25 @@
-### get tooele tech route
+### Get tooele tech route
 GET http://localhost:3000/ttech HTTP/1.1
 
-### get the root path /
+### Get the root path /
 GET http://localhost:3000/ HTTP/1.1
 
-### get all students
+### Get one student
+GET http://localhost:3000/students/6740c40b30d985d2ef0a2e50 HTTP/1.1
+
+
+### Get all students
 GET http://localhost:3000/students HTTP/1.1
+
+### Post one student
+POST http://localhost:3000/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Jade",
+    "lastName": "Reeves",
+    "email": "jreeves@gmail.com",
+    "age": "28",
+    "currentCollege": "BYU-Idaho",
+
+}
